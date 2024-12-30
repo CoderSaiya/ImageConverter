@@ -102,7 +102,7 @@
             this.rtbLog.TabIndex = 5;
             this.rtbLog.Text = "";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -113,8 +113,9 @@
             this.Controls.Add(this.lblFormat);
             this.Controls.Add(this.headerPanel);
             this.Controls.Add(this.btnSelectFile);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
             this.ResumeLayout(false);

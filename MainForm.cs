@@ -16,5 +16,16 @@ namespace ImageConverterApp
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            cmbFormat.Items.AddRange(new string[] { "png", "jpg", "bmp", "gif" });
+            cmbFormat.SelectedIndex = 0;
+        }
     }
 }
