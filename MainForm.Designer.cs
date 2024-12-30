@@ -46,6 +46,7 @@
             this.btnSelectFile.TabIndex = 1;
             this.btnSelectFile.Text = "Chọn File...";
             this.btnSelectFile.UseVisualStyleBackColor = true;
+            this.btnSelectFile.Click += new System.EventHandler(this.btnSelectFile_Click);
             // 
             // lbNameProject
             // 
